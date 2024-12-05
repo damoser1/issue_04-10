@@ -1,0 +1,21 @@
+name: Bug report
+description: Fill out a bug report 
+body:
+  - type: dropdown
+    attributes:
+      label: Platform      
+      description: Specify your platform 
+      options:
+        - Windows
+        - macOS
+        - iOS
+        - Android
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Bug description
+      description: What exactly is the bug?
+    validations:
+      required: true
